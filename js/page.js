@@ -491,7 +491,7 @@
         day_chart.draw();
         time_chart.draw();
 
-        d3.xhr("http://bardiff-martinjc.rhcloud.com/api/checkins", function(err, checkins) {
+        d3.xhr("https://bardiff-martinjc.rhcloud.com/api/checkins", function(err, checkins) {
             checkins = JSON.parse(checkins.response);
             year_chart_2015.add_data(checkins);
             year_chart_2015.draw();
